@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74B008AB191B12B1009210C9 /* BoardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B008AA191B12B1009210C9 /* BoardSpec.m */; };
+		74B008B1191B14CC009210C9 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B008B0191B14CC009210C9 /* Board.m */; };
 		74F0110F191B0E7100E93C54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F0110E191B0E7100E93C54 /* Foundation.framework */; };
 		74F01111191B0E7100E93C54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F01110191B0E7100E93C54 /* CoreGraphics.framework */; };
 		74F01113191B0E7100E93C54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F01112191B0E7100E93C54 /* UIKit.framework */; };
@@ -21,7 +23,7 @@
 		74F01132191B0E7100E93C54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F0110E191B0E7100E93C54 /* Foundation.framework */; };
 		74F01133191B0E7100E93C54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F01112191B0E7100E93C54 /* UIKit.framework */; };
 		74F0113B191B0E7100E93C54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74F01139191B0E7100E93C54 /* InfoPlist.strings */; };
-		74F0113D191B0E7100E93C54 /* TTTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F0113C191B0E7100E93C54 /* TTTTests.m */; };
+		BA514945D7CB482F91444909 /* libPods-TTTTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB9833FB84E4918819C87F7 /* libPods-TTTTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74B008AA191B12B1009210C9 /* BoardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardSpec.m; sourceTree = "<group>"; };
+		74B008AF191B14CC009210C9 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		74B008B0191B14CC009210C9 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
 		74F0110B191B0E7100E93C54 /* TTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F0110E191B0E7100E93C54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		74F01110191B0E7100E93C54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +59,8 @@
 		74F01130191B0E7100E93C54 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		74F01138191B0E7100E93C54 /* TTTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTTTests-Info.plist"; sourceTree = "<group>"; };
 		74F0113A191B0E7100E93C54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		74F0113C191B0E7100E93C54 /* TTTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTTests.m; sourceTree = "<group>"; };
+		78657E3B25B8458888FF9B04 /* Pods-TTTTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTTTests.xcconfig"; path = "Pods/Pods-TTTTests.xcconfig"; sourceTree = "<group>"; };
+		EEB9833FB84E4918819C87F7 /* libPods-TTTTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTTTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,12 +81,39 @@
 				74F01131191B0E7100E93C54 /* XCTest.framework in Frameworks */,
 				74F01133191B0E7100E93C54 /* UIKit.framework in Frameworks */,
 				74F01132191B0E7100E93C54 /* Foundation.framework in Frameworks */,
+				BA514945D7CB482F91444909 /* libPods-TTTTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74B008AC191B13F8009210C9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				74F01126191B0E7100E93C54 /* TTTViewController.h */,
+				74F01127191B0E7100E93C54 /* TTTViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		74B008AD191B145E009210C9 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				74B008AF191B14CC009210C9 /* Board.h */,
+				74B008B0191B14CC009210C9 /* Board.m */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		74B008AE191B14B0009210C9 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				74B008AA191B12B1009210C9 /* BoardSpec.m */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
 		74F01102191B0E7100E93C54 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +121,7 @@
 				74F01136191B0E7100E93C54 /* TTTTests */,
 				74F0110D191B0E7100E93C54 /* Frameworks */,
 				74F0110C191B0E7100E93C54 /* Products */,
+				78657E3B25B8458888FF9B04 /* Pods-TTTTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +141,7 @@
 				74F01110191B0E7100E93C54 /* CoreGraphics.framework */,
 				74F01112191B0E7100E93C54 /* UIKit.framework */,
 				74F01130191B0E7100E93C54 /* XCTest.framework */,
+				EEB9833FB84E4918819C87F7 /* libPods-TTTTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,12 +149,12 @@
 		74F01114191B0E7100E93C54 /* TTT */ = {
 			isa = PBXGroup;
 			children = (
+				74B008AD191B145E009210C9 /* Lib */,
+				74B008AC191B13F8009210C9 /* Controllers */,
 				74F0111D191B0E7100E93C54 /* TTTAppDelegate.h */,
 				74F0111E191B0E7100E93C54 /* TTTAppDelegate.m */,
 				74F01120191B0E7100E93C54 /* Main_iPhone.storyboard */,
 				74F01123191B0E7100E93C54 /* Main_iPad.storyboard */,
-				74F01126191B0E7100E93C54 /* TTTViewController.h */,
-				74F01127191B0E7100E93C54 /* TTTViewController.m */,
 				74F01129191B0E7100E93C54 /* Images.xcassets */,
 				74F01115191B0E7100E93C54 /* Supporting Files */,
 			);
@@ -140,7 +175,7 @@
 		74F01136191B0E7100E93C54 /* TTTTests */ = {
 			isa = PBXGroup;
 			children = (
-				74F0113C191B0E7100E93C54 /* TTTTests.m */,
+				74B008AE191B14B0009210C9 /* Lib */,
 				74F01137191B0E7100E93C54 /* Supporting Files */,
 			);
 			path = TTTTests;
@@ -179,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74F01143191B0E7100E93C54 /* Build configuration list for PBXNativeTarget "TTTTests" */;
 			buildPhases = (
+				D4318AAB034A4839B2CC85C6 /* Check Pods Manifest.lock */,
 				74F0112B191B0E7100E93C54 /* Sources */,
 				74F0112C191B0E7100E93C54 /* Frameworks */,
 				74F0112D191B0E7100E93C54 /* Resources */,
+				EE4F966F93D44CEC90172E5B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +286,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D4318AAB034A4839B2CC85C6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE4F966F93D44CEC90172E5B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TTTTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74F01107191B0E7100E93C54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -256,6 +326,7 @@
 			files = (
 				74F01128191B0E7100E93C54 /* TTTViewController.m in Sources */,
 				74F0111B191B0E7100E93C54 /* main.m in Sources */,
+				74B008B1191B14CC009210C9 /* Board.m in Sources */,
 				74F0111F191B0E7100E93C54 /* TTTAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74F0113D191B0E7100E93C54 /* TTTTests.m in Sources */,
+				74B008AB191B12B1009210C9 /* BoardSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +485,7 @@
 		};
 		74F01144191B0E7100E93C54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78657E3B25B8458888FF9B04 /* Pods-TTTTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TTT.app/TTT";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -436,6 +508,7 @@
 		};
 		74F01145191B0E7100E93C54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78657E3B25B8458888FF9B04 /* Pods-TTTTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TTT.app/TTT";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -471,6 +544,7 @@
 				74F01142191B0E7100E93C54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74F01143191B0E7100E93C54 /* Build configuration list for PBXNativeTarget "TTTTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +553,7 @@
 				74F01145191B0E7100E93C54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
